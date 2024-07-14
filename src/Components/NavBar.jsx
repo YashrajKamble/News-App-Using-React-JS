@@ -20,7 +20,6 @@ const NavBar = ({ setCategory }) => {
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-
             <li className="nav-item">
               <div
                 className="nav-link"
@@ -62,7 +61,6 @@ const NavBar = ({ setCategory }) => {
                 Entertainment
               </div>
             </li>
-            
           </ul>
         </div>
       </div>
