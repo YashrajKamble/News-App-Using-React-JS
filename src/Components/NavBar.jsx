@@ -5,6 +5,7 @@ const NavBar = ({ setCategory }) => {
         <a className="navbar-brand" href="/">
           <span className="badge bg-light text-dark fs-5">NewsMsg</span>{" "}
         </a>
+
         <button
           className="navbar-toggler"
           type="button"
@@ -16,8 +17,10 @@ const NavBar = ({ setCategory }) => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+
             <li className="nav-item">
               <div
                 className="nav-link"
@@ -26,26 +29,31 @@ const NavBar = ({ setCategory }) => {
                 Technology
               </div>
             </li>
+
             <li className="nav-item">
               <div className="nav-link" onClick={() => setCategory("Business")}>
                 Business
               </div>
             </li>
+
             <li className="nav-item">
               <div className="nav-link" onClick={() => setCategory("health")}>
                 Health
               </div>
             </li>
+
             <li className="nav-item ">
               <div className="nav-link" onClick={() => setCategory("Science")}>
                 Science
               </div>
             </li>
+
             <li className="nav-item">
               <div className="nav-link" onClick={() => setCategory("sports")}>
                 Sports
               </div>
             </li>
+
             <li className="nav-item">
               <div
                 className="nav-link"
@@ -54,6 +62,7 @@ const NavBar = ({ setCategory }) => {
                 Entertainment
               </div>
             </li>
+            
           </ul>
         </div>
       </div>

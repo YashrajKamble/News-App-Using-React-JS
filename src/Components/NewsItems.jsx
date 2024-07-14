@@ -12,6 +12,7 @@ function NewsItems({ title, description, src, url }) {
         className="card-img-top"
         alt="..."
       />
+
       <div className="card-body">
         <h5 className="card-title">{title.slice(0, 31)}</h5>
         <p className="card-text">
@@ -23,6 +24,7 @@ function NewsItems({ title, description, src, url }) {
           Read More
         </a>
       </div>
+      
     </div>
   );
 }
