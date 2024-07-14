@@ -3,7 +3,7 @@ const NavBar = () => {
     <nav className="navbar navbar-expand-lg bg-light navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          Navbar
+          <span className="badge bg-light text-dark fs-5">NewsMsg</span>{" "}
         </a>
         <button
           className="navbar-toggler"
