@@ -1,19 +1,18 @@
 import { useEffect, useState } from "react";
 import NewsItems from "./NewsItems";
 
-function NewsBoard() {
+function NewsBoard({ category }) {
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    const url = `https://newsapi.org/v2/everything?q=bitcoin&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=
+${import.meta.env.VITE_API_KEY}`;
 
     fetch(url)
       .then((response) => response.json())
       .then((data) => setArticles(data.articles))
       .catch((error) => console.error("Error fetching data:", error));
-  }, []);
+  }, [category]);
 
   return (
     <div>
