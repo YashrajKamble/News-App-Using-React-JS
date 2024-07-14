@@ -25,6 +25,10 @@ function NewsBoard({ category }) {
 
   return (
     <div>
+      <h2 className="text-center mt-2">
+        Latest <span className="badge text-light bg-danger fs-4">News</span>
+      </h2>
+
       {loading ? (
         <div
           className="d-flex justify-content-center align-items-center"
@@ -36,9 +40,6 @@ function NewsBoard({ category }) {
         </div>
       ) : (
         <div>
-          <h2 className="text-center mt-2">
-            Latest <span className="badge text-light bg-danger fs-4">News</span>
-          </h2>
           {articles.map((news, index) => (
             <NewsItems
               key={index}
