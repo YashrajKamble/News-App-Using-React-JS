@@ -16,7 +16,7 @@ function NewsBoard() {
   return (
     <div>
       <h2 className="text-center">
-        Latest <span className="badge text-light bg-danger fs-4">News</span>
+        Latest <span className="badge text-light bg-danger fs-4">News </span>
       </h2>
 
       {articles.map((news, index) => {
